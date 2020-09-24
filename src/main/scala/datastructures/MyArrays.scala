@@ -2,6 +2,9 @@ package datastructures
 
 object MyArrays extends App {
 
+  /**
+   * ARRAY => BUILT IN DATA STRUCTURE
+   */
   /*private val ints = Array(1,2,3,4,5)
 
   private val myInts: MyArray[Int] = MyArray(1, 2, 3, 4, 5)
