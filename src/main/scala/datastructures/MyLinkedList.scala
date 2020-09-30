@@ -18,6 +18,7 @@ object MyLinkedList extends App {
   linkedList.printElements()
   linkedList.remove(0)
   linkedList.printElements()
+  linkedList.reverse(0).printElements()
 
   object CustomLinkedList {
     def apply[T](element: T): CustomLinkedList[T] = {
@@ -84,6 +85,23 @@ object MyLinkedList extends App {
         current = current.next
       }
       current
+    }
+
+    /**
+     * Exercise : Reverse the LinkedList
+     *  input : LinkedList(1,2,3,4,5)
+     *  output : LinkedList(5,4,3,2,1)
+     */
+
+    def reverse(element: T) : CustomLinkedList[T] = {
+      val result = CustomLinkedList(element)
+      var currentNode = head
+      while(currentNode != null) {
+        result.prepend(currentNode.data)
+        currentNode = currentNode.next
+      }
+     result.remove(result.length-1)
+      result
     }
   }
 
