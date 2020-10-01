@@ -1,6 +1,6 @@
 package datastructures
 
-object MyStack extends App {
+object LinkedListBasedMyStack extends App {
 
   private val stack: Stack[Int] = Stack[Int]()
   (10 to 50 by 10).foreach(item => println(s"Pushing $item : ${stack.push(item)}"))
@@ -51,7 +51,6 @@ object MyStack extends App {
         if(current != null) println(s"    |         ")
       }
       println("================STACK ELEMENTS================")
-
     }
     def isEmpty: Boolean = this.length == 0
 
