@@ -2,7 +2,7 @@ package datastructures
 
 import scala.reflect.ClassTag
 
-object ArrayBasedMyStack extends App {
+object ArrayBasedStack extends App {
 
   private val stack: Stack[Int] = Stack[Int]()
   (10 to 50 by 10).foreach(item => println(s"Pushing $item : ${stack.push(item)}"))

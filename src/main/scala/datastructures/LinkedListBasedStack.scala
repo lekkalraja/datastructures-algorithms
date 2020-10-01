@@ -1,6 +1,6 @@
 package datastructures
 
-object LinkedListBasedMyStack extends App {
+object LinkedListBasedStack extends App {
 
   private val stack: Stack[Int] = Stack[Int]()
   (10 to 50 by 10).foreach(item => println(s"Pushing $item : ${stack.push(item)}"))
