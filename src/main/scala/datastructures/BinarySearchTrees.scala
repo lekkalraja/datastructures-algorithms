@@ -1,3 +1,4 @@
+/*
 package datastructures
 
 import scala.annotation.tailrec
@@ -27,7 +28,7 @@ object BinarySearchTrees extends App {
 
   class BinarySearchTree[A](val root: Node[A]) {
 
-    implicit def ordering[A]: Ordering[A] = Ordering.by(_.toString)
+    implicit def ordering[A]: Ordering[A] = Ordering.fromLessThan((_, _) => true)
 
     def insert[A](element: A) : BinarySearchTree[A] = {
       val newNode = Node(element)
@@ -73,4 +74,4 @@ object BinarySearchTrees extends App {
   }
 
   class Node[A](var left: Node[A], var right: Node[A], var data: A)
-}
+}*/
