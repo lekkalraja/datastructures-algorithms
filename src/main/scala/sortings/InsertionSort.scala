@@ -14,7 +14,7 @@ object InsertionSort extends App {
    */
   for(i <- 1 until elements.length) {
     val temp = elements(i)
-    var j = i - 1;
+    var j = i - 1
     while (j >= 0 && elements(j) > temp) {
       elements(j + 1) = elements(j)
       j = j - 1
